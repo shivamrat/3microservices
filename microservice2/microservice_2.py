@@ -13,7 +13,7 @@ def add_numbers():
 
     # Add numbers and send result to Microservice3
     result = num1 + num2
-    response = requests.post('http://m3:5002/multiply_by_15', json={'result': result})
+    response = requests.post('http://localhost:5002/multiply_by_15', json={'result': result})
     
     return jsonify(response.json())
 
