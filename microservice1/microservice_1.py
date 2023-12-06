@@ -12,7 +12,7 @@ def send_numbers():
     num2 = data['num2']
 
     # Send numbers to Microservice2
-    response = requests.post('http://m2:5001/add_numbers', json={'num1': num1, 'num2': num2})
+    response = requests.post('http://localhost:5001/add_numbers', json={'num1': num1, 'num2': num2})
     
     return jsonify(response.json())
 
